@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/rt"
+tools:context="com.example.pc.fragment.MainActivity">
+
+
+<android.support.v4.view.ViewPager
+    android:id="@+id/viewpager"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/frameMenu"/>
+
+<FrameLayout
+    android:id="@+id/frameMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <!-- 动态 -->
+
+        <FrameLayout
+            android:id="@+id/layout_at"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="choose1">
+
+            <ImageButton
+                android:id="@+id/image_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:background="@android:drawable/star_big_on"
+                android:onClick="choose1" />
+
+
+        </FrameLayout>
+
+        <!-- 与我相关 -->
+
+        <FrameLayout
+            android:id="@+id/layout_auth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="choose2">
+
+            <ImageButton
+                android:id="@+id/image_auth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:background="@android:drawable/star_big_on"
+                android:onClick="choose2" />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/layout_space"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="choose3">
+
+            <ImageButton
+                android:id="@+id/image_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:background="@android:drawable/star_big_on"
+                android:onClick="choose3" />
+
+
+        </FrameLayout>
+
+        <!-- 玩吧 -->
+
+        <FrameLayout
+            android:id="@+id/layout_more"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="choose4">
+
+            <ImageButton
+                android:id="@+id/image_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:background="@android:drawable/star_big_on"
+                android:nestedScrollingEnabled="false"
+                android:onClick="choose4" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+
+</RelativeLayout>
